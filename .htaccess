@@ -1,0 +1,41 @@
+RewriteOptions inherit
+RewriteEngine On
+RewriteBase /
+Options +FollowSymLinks
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://dev.mglinks.quest/$1 [R,L]
+
+# Custom Routes for Cb
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^gdcbk app/gdcbk.php [L]
+RewriteRule ^tdcbk app/tdcbk.php [L]
+RewriteRule ^bkcbk app/bkcbk.php [L]
+
+# Custom Routes for Views
+RewriteRule ^dl views/dl.php [L]
+RewriteRule ^wk views/wk.php [L]
+RewriteRule ^404 views/404.php [L]  
+RewriteRule ^gdl views/gdl.php [L]
+RewriteRule ^term views/term.php [L]
+RewriteRule ^file views/file.php [L]
+RewriteRule ^admin views/admin.php [L]
+RewriteRule ^about views/about.php [L]
+RewriteRule ^gmail views/gmail.php [L]
+RewriteRule ^folder views/folder.php [L]
+RewriteRule ^backup views/backup.php [L]
+RewriteRule ^analytics views/analytics.php [L]
+RewriteRule ^add_analytics views/add_analytics.php [L]
+RewriteRule ^upload views/upload.php [L]
+RewriteRule ^worker views/worker.php [L]
+RewriteRule ^signin views/signin.php [L]
+RewriteRule ^team-drive views/team.php [L]
+RewriteRule ^contact views/contact.php [L]
+RewriteRule ^privacy views/privacy.php [L]
+RewriteRule ^setting views/setting.php [L]
+RewriteRule ^all-files views/files.php [L]
+RewriteRule ^signout views/signout.php [L]
+RewriteRule ^test views/test.php [L]
+RewriteRule ^messages views/messages.php [L]
+RewriteRule ^download views/download.php [L]

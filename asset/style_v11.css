@@ -1,0 +1,75 @@
+.container.mx-auto.py-10.sm\:py-10.px-4 {
+    min-height: 79vh;
+}
+.container.px-5.py-24.mx-auto{
+     min-height: 76vh;
+}
+.container.px-4.mx-auto.py-24.mt-3.max-w-sm {
+    min-height: 77vh;
+}
+#pagination1 {
+    text-align:right;
+}
+ul#pag_li > li {
+    margin-bottom:14px !important;
+}
+#pag_li{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+nav#navpagli > ul > li > a {
+    color: #2563eb;
+    font-weight: 500;
+    border: solid 1px #2563eb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+li.disabled > a {
+    color: #4b5563 !important;
+    font-weight: 500;
+    border: solid 1px #374151 !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+li.active > a {
+    color: white !important;
+    font-weight: 500;
+    border: solid 1px white !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+li.norli > a {
+    color: #2563eb;
+    font-weight: 500;
+    border: solid 1px #2563eb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+#m_controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#sh_count {
+    display: flex;
+    align-items: center;
+}
+a.myLink:focus {
+    color: #ff9119 !important;
+}
+form#item_per {
+    display: flex;
+    align-items: baseline;
+}
+#dropdownAction {
+    transform: translate3d(22%, 226px, 0px) !important;
+}
+@media screen and (max-width: 768px) {
+  #dropdownAction {
+    transform: translate3d(9%, 212px, 0px) !important;
+}
+}
